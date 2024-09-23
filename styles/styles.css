@@ -1,0 +1,77 @@
+.container{
+    display:flex;
+    background-color:#ee9999;
+    flex-direction:row;
+    justify-content:center;
+    align-items:flex-end;
+    height:300px;
+}
+.container > div{
+    background-color:#eeffee;
+    color:#334433;
+    margin:10px;
+    padding:25px;
+    text-align:center;
+    font-size:30px;
+}
+.container :hover{
+    color:#cabdef;
+    background-color:#dd0000;
+}
+.container-two{
+    display:flex;
+    flex-direction:column;
+    background-color:#a9c5ee;
+}
+.container-two > div{
+    background-color:#eeffee;
+    color:#334433;
+    margin:10px;
+    padding:25px;
+    text-align:center;
+    font-size:30px;
+}
+.container-three{
+    display:flex;
+    flex-direction:row-reverse;
+    background-color:#f9edbc;
+    justify-content:center;
+    align-items:center;
+    height:500px;
+}
+.container-three > div{
+    background-color:#eeffee;
+    color:#334433;
+    flex:1;
+    margin:10px;
+    padding:25px;
+    text-align:center;
+    font-size:30px;
+}
+.container-four{
+    display:flex;
+    background-color:#febdff;
+    justify-content:center;
+    align-items:center;
+    height:400px;
+    width:100%;
+}
+.container-four > div{
+    background-color:#eeffee;
+    color:#334433;
+    flex:1;
+    margin:10px;
+    padding:25px;
+    font-size:30px;
+    height:200px;
+    width:200px;
+}
+h1{
+    text-align:center;
+}
+li{
+    font-size:30px;
+}
+ul :nth-child(odd){
+    background-color:#d1d700;
+}
