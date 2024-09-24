@@ -1,3 +1,8 @@
+/*The display:flex property makes the items in the container flexible.
+The flex-direction property aligns the items in a row.
+The justify-content property places the items in the middle container in the horizontal direction.
+The align-items property places the items at the bottom of the container in the vertical direction.*/
+
 .container{
     display:flex;
     background-color:#ee9999;
@@ -14,10 +19,12 @@
     text-align:center;
     font-size:30px;
 }
+/* Items in this container change color and background color if you hover over them.*/
 .container :hover{
     color:#cabdef;
     background-color:#dd0000;
 }
+/*The items in this container are displayed in a column format.*/
 .container-two{
     display:flex;
     flex-direction:column;
@@ -31,6 +38,10 @@
     text-align:center;
     font-size:30px;
 }
+/*The items in this container are displayed in a row format in reverse order.
+The justify-content property places the items in the center of the container in the horizontal direction.
+The align-items property places the items in the center of the container in the vertical direction.
+*/
 .container-three{
     display:flex;
     flex-direction:row-reverse;
@@ -47,6 +58,13 @@
     padding:25px;
     text-align:center;
     font-size:30px;
+}
+
+.container-three :hover{
+    background-color:#88aaaa;
+    color:#0044dd;
+    flex:2;
+    transition:0.2s;
 }
 .container-four{
     display:flex;
@@ -72,6 +90,15 @@ h1{
 li{
     font-size:30px;
 }
+/*This piece of code colors every odd-numbered list item with the hex-value d1d700. */
 ul :nth-child(odd){
     background-color:#d1d700;
+}
+/*This piece of code colors every list item that is the only item in their respective list with the hex-value of #748512.*/
+ul :only-child{
+    background-color:#748512;
+}
+/*This piece of code colors the second item in each list with the hex-value of #748512.*/
+ul :nth-of-type(2){
+    background-color:#984321;
 }
